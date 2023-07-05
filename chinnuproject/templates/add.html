@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>form</h2>
+<form method="POST" >
+    {% csrf_token %}
+    <input type="text" name="name"  placeholder="Enter your username">
+   <p><b><a href="https:www.wikipedia.com">department</a>:</b>
+       <select name="dep" class="form-control"></a>
+         <option value="1">computer science</option>
+         <option value="2">commerce</option>
+     </select>
+   </p>
+
+
+    <input type="text" name="year" placeholder="enter the year"><br>
+    <input type="date" name="Date" placeholder="enter the date"><br>
+    <input type="text" name="Age" placeholder="enter the age"><br>
+    <input type="text" name="number" placeholder="enter the phone number"><br>
+    <input type="text" name="mail" placeholder="enter the mail id"><br>
+    <input type="text" name="address" placeholder="enter the address"><br>
+    <input type="text" name="courses" placeholder="enter the courses"><br>
+    <label>Gender</label><input type="radio">male<input type="radio">female<br>
+    <input type="submit">
+</form>
+    <a class="btn btn-warning" href="{% url 'movieapp:logout' %}">Logout</a>
+</body>
+</html>
